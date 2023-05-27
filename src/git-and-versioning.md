@@ -114,16 +114,36 @@ git pull <verificar opções>
 
 ### aula 9
 
-git branch testing
-git log --oneline -decorate - para mostrar em qual branch o HEAD está
-git checkout "testing" - para trocar o HEAD para outra branch
-gitignore, para ignorar alguns arquivos
-branch ajuda separar em fluxos
+para criar uma nova branch:
+```bash
+git branch [opções] <nome-da-branch>
+```
+para exibir a branch atual do HEAD:
+```bash
+git log --oneline -decorate
+```
+para trocar o HEAD para outra branch:
+```bash
+git checkout [opções] <nome-da-branch>
+```
+
+> para o git ignorar arquivos é necessário informar ao git através do arquivo .gitignore que deve estar na raiz do projeto
+
+> branch ajuda separar em fluxos
 
 ### aula 10
 
-git branch, para mostrar qual branch está sendo acessada
-git checkout master, para voltar o HEAD para master
-git merge testing, unindo os fluxos das duas branch e retorna o fluxo principal para master
+para mostrar a branch atual:
+```bash
+git branch
+```
+para retornar o HEAD à branch main:
+```bash
+git checkout main
+```
+para realizar o merge da branch <whatever> e retornar o fluxo principal para a main:
+```bash
+git merge <whatever>
+```
 
 
