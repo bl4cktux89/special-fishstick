@@ -88,10 +88,25 @@ git restore
 
 ### aula 7
 
-git add - para área de staged - git commit - para salvar - git push origin master - para subir no repositório
+#### fluxo de alteração de estados do git
+adicionar para a área de preparo (staged):
+```bash
+git add
+```
+salvar o estado atual:
+```bash
+git commit
+```
+para enviar as alterações realizadas ao repositório remoto:
+```bash
+git push <verificar opções>
+```
+para trazer do repositório remoto e fazer um merge local:
+```bash
+git pull <verificar opções>
+```
 
-git pull, para trazer do repositório remoto e faz um merge local.
-(cuidado ao utilizar git pull)
+> *** CUIDADO AO USAR O GIT PULL ***
 
 ### aula 8
 
